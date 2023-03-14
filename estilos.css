@@ -1,0 +1,306 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+
+body{
+    background:#1d1e21;
+    margin: 15px auto;
+    font-family: 'Roboto';
+
+}
+
+
+.container{
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    grid-gap: 15px;
+    grid-template-columns: 33% 33% 33% ;
+    grid-template-rows: 200px 200px 250px;
+    grid-auto-rows: minmax(150px,auto);
+}
+
+.container div{
+    background:#33353b;
+    padding: 15px;
+}
+
+.container .titulo{
+    grid-column: 1/-1;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: whitesmoke;
+}
+
+.container .cripto{
+    grid-column: 1/-1;
+}
+
+.container .titulo img{
+    width: 10%;
+}
+.container .ganar{
+    grid-column: 1/-1;
+}
+
+
+.container .bitcoin,
+.container .paypal,
+.container .payeer,
+.container .cripto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container .bitcoin i{
+    color: #F7931A;
+    font-size: 30px;
+    margin: 15px auto;
+}
+.container .bitcoin p{
+    color: whitesmoke;
+    margin: 15px auto;
+}
+
+.container .bitcoin p span{
+    color: #F7931A;
+    padding: 5px;
+    border: solid #F7931A 2px;
+}
+
+
+.container .paypal i{
+    color: #3b7bbf;
+    font-size: 30px;
+    margin: 15px auto;
+}
+
+.container .paypal p{
+    color: whitesmoke;
+    margin: 15px auto;
+}
+
+.container .paypal a{
+    background:  #3b7bbf;
+    width: 150px;
+    height: 30px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container .payeer h1{
+    margin: 15px auto;
+    color: #05a5db;
+}
+
+.container .payeer p{
+    margin: 15px auto;
+    color: whitesmoke;
+
+}
+
+.container .payeer p span{
+    color: #05a5db;
+    padding: 5px;
+    border: solid  #05a5db 2px;
+}
+
+
+.container .cripto i{
+    color: #008b00;
+    font-size: 30px;
+    margin: 15px auto;
+}
+
+.container .cripto p{
+    color: white;
+    margin: 6px auto;
+}
+
+.container .cripto .lite  {
+    color:#d5dde6;
+    border: solid #d5dde6 2px;
+    padding: 5px;
+}
+
+.container .cripto .dash  {
+    color:#05a5db;
+    border: solid #05a5db 2px;
+    padding: 5px;
+}
+
+.container .cripto .ethe  {
+    color:#9dd6e9;
+    border: solid #9dd6e9 2px;
+    padding: 5px;
+}
+
+
+.container .ganar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container .ganar img{
+    width: 100%;
+    height: 70%;
+}
+
+.container .ganar img:hover{
+    opacity: 0.8;
+}
+
+
+@media screen and (max-width:1300px){
+    .container{
+        grid-template-columns: 100%;
+    }
+    .container .titulo img{
+        width: 15%;
+    }
+}
+
+@media screen and (max-width:900px){
+    .container .titulo img{
+        width: 20%;
+    }
+
+    .container .bitcoin i,
+    .container .paypal i,
+    .container .cripto i{
+        font-size: 40px;
+
+    }
+
+    .container .bitcoin p,
+    .container .paypal p,
+    .container .cripto p{
+        font-size: 20px;
+
+    }
+
+    .container .payeer p{
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width:600px){
+    .container .titulo img{
+        width: 25%;
+    }
+
+    .container .bitcoin i,
+    .container .paypal i,
+    .container .cripto i{
+        font-size: 35px;
+
+    }
+
+    .container .bitcoin p,
+    .container .paypal p,
+    .container .cripto p{
+        font-size: 18px;
+
+    }
+
+    .container .payeer p{
+        font-size: 18px;
+    }
+
+    .container .cripto .ethe {
+        padding: 1px;
+    }
+
+    .container .ganar img{
+        height: 80px;
+    }
+
+}
+
+
+@media screen and (max-width:500px){
+    .container .titulo img{
+        width: 30%;
+    }
+
+    .container .bitcoin i,
+    .container .paypal i,
+    .container .cripto i{
+        font-size: 35px;
+
+    }
+
+
+    .container .cripto .lite,
+    .container .cripto .dash,
+    .container .cripto .ethe{
+        padding: 1px;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .container .ganar img{
+        height: 80px;
+    }
+
+}
+
+@media screen and (max-width:440px){
+
+
+    .container .cripto .lite,
+    .container .cripto .dash,
+    .container .cripto .ethe{
+        padding: 1px;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+        width: 100%;
+    }
+    .container .bitcoin p span{
+        font-size: 15px;
+    }
+
+    .container .ganar img{
+        height: 60px;
+    }
+
+    .container .titulo h1{
+        width: 80%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:360px){
+    .container .bitcoin p span{
+        font-size: 12px;
+    }
+
+    .container .cripto .lite,
+    .container .cripto .dash,
+    .container .cripto .ethe{
+        width: 100%;
+        font-size: 12px;
+    } 
+}

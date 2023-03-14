@@ -1,0 +1,87 @@
+body{
+    font-family: 'Roboto', sans-serif ;
+}
+
+.code{
+    width: 100%;
+    height: 15em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.code form h3 a {
+    color: #05a5db;
+}
+
+.code form{
+    display:flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    /* background: #000; */
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+}
+
+.code form h3{
+    color: whitesmoke;
+    margin: 5px auto;
+    text-align: center;
+    width: 100%;
+}
+
+.code form input{
+    margin: 10px 30px;
+    width:25%;
+    height: 20%;
+    border: solid #05a5db 3px;
+    background:transparent;
+    border-radius: 20px;
+    outline-color:none;
+    outline-style: none;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif ;
+    text-align: center;
+    font-size: 15px;
+}
+
+.code form input::-webkit-input-placeholder {
+     color: white;
+     font-size: 15px;
+     text-align: center;
+     font-family: 'Roboto', sans-serif;
+     opacity: 0.5;
+} 
+
+.code form button{
+    width:10%;
+    height: 22%;
+    background: #05a5db;
+    color: whitesmoke;
+    border: 0;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.code form button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media screen and (max-width:900px){
+    .code form h3{
+        width: 90%;
+        font-size: 15px;
+    }
+
+    .code form input{
+        width:70%;
+    }
+
+    .code form button{
+        width:35%;
+    }
+}
+

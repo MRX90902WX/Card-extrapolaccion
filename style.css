@@ -1,0 +1,283 @@
+
+/* gris = #1d1e21
+
+gris de letras secundarias = #33353b
+
+azul = #05a5db
+
+rojo = #cd0000
+
+verde = #008b00 */
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: #1d1e21;
+    font-family:  'Roboto', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.titulo{
+    /* background: blue; */
+    width: 100%;
+    height: 60%;
+    display:flex;
+    flex-direction: column;
+    color: whitesmoke;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.titulo img{
+    width:10%;
+    /* background: #000; */
+
+}
+
+.opciones{
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.opciones form{
+    width: 80%;
+    height: 8em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.opciones form input{
+    display: flex;
+    margin: 0 1%;
+    width: 25%;
+    height: 40%;
+    justify-content: center;
+    border-radius: 10px;
+    border: solid #05a5db 3px;
+    background: #1d1e21;
+    color: whitesmoke;
+    font-size: 170%;
+
+}
+.opciones form input:active{
+    background: #05a5db;
+}
+
+.opciones form input:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+footer{
+    width:100%;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: #0b0c0e ;
+}
+
+footer .redes{
+    display: flex;
+    width:30%;
+    height: 60%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.redes a{
+    color:#1d1e21;
+    text-decoration: none;
+}
+
+.redes a i:hover{
+    color: #05a5db;
+}
+
+.publicidad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 15px;
+
+}
+
+
+.redes a i{
+    display: flex;
+    font-size: 50px;
+    flex-direction: row;
+}
+
+
+footer .descargar{
+    display: flex;
+    width:30%;
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.descargar a{
+    text-decoration: none;
+    width:80%;
+    height: 80%;
+    background: #1d1e21 ;
+    border-radius: 10px;
+    font-size: 160%;
+    color: whitesmoke;
+    opacity: 0.5;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.descargar a:hover{
+    opacity: 1;
+    background: #05a5db ;
+    cursor: pointer;
+}
+
+
+footer .donate{
+    display: flex;
+    width:30%;
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+}
+
+.donate a{
+    text-decoration: none;
+    width:80%;
+    height: 80%;
+    background: #1d1e21 ;
+    border-radius: 10px;
+    font-size: 160%;
+    color: whitesmoke;
+    opacity: 0.5;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+
+.donate a:hover{
+    opacity: 1;
+    background: #05a5db;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:900px){
+    .titulo  img{
+        width:30%;
+    }
+    .titulo h1{
+        font-size: 25px;
+    }
+    .opciones form{
+        width: 100%;
+
+    }
+
+    .opciones form input{
+        font-size: 150% ;
+    }
+
+    footer{
+        flex-direction: column-reverse;
+        height: 180px;
+    }
+
+    footer .redes{
+        width:70%;
+        height: 70%;
+    }
+
+    footer .donate{
+        width: 80%;
+        height: 70%;
+    }
+
+    footer .descargar{
+        width: 80%;
+        height: 70%;
+    }
+
+
+}
+
+@media screen and (max-width:1000px){
+     .opciones{
+         margin: 30px auto;
+     }
+}
+
+@media screen and (max-width:500px){
+    .titulo  img{
+        width:35%;
+    }
+    .titulo h1{
+        font-size: 20px;
+        width: 80%;
+        text-align: center;
+    }
+    .titulo h3{
+        font-size: 15px;
+    }
+    .opciones form{
+        width: 100%;
+        flex-grow: grow;
+
+    }
+
+    .opciones form input{
+        font-size: 120% ;
+        margin: 1% 2%;
+        width: 40%;
+    }
+
+    footer .redes{
+        width:70%;
+        height: 50%;
+    }
+
+    footer .donate{
+        width: 90%;
+        height: 50%;
+        font-size: 12px;
+    }
+
+    footer .descargar{
+        width: 90%;
+        height: 50%;
+        font-size: 12px ;
+    }
+
+    footer .redes a i{
+        font-size: 35px ;
+    }
+
+}
